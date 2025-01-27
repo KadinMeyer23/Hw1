@@ -1,0 +1,21 @@
+//Written By Kadin Meyer
+//1/27/2025
+
+namespace FourSistersAndaDuckBear
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Duckeggs aDuckeggs1 = new Duckeggs();
+            Console.WriteLine("Enter Number of Duck Eggs: ");
+            int Num = Convert.ToInt32(Console.ReadLine());
+            aDuckeggs1.DuckEggs = Num;
+
+            Console.WriteLine("Remainder: " + aDuckeggs1.Remainder());
+            Console.WriteLine("Eggs Per Sister: " + aDuckeggs1.EggsPerSister());
+
+
+        }
+    }
+}
