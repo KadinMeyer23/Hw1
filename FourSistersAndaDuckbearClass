@@ -1,0 +1,43 @@
+//Written By Kadin Meyer
+//1/27/2025
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FourSistersAndaDuckBear
+{
+    public class Duckeggs
+    {
+        //declare class variables
+        private int duckEggs = -1000;
+
+        //gets and sets
+        public int DuckEggs
+        {
+            get { return this.duckEggs; }
+            set { this.duckEggs = value; }
+        }
+
+        //Methods
+        public int Remainder() {
+
+            int Remains = 0;
+            Remains = DuckEggs % 2;
+            return Remains;
+        }
+
+        public int EggsPerSister()
+        {
+            int total = 0;
+
+            total = DuckEggs / 4;
+
+            return total;
+        
+        }
+
+    }
+}
