@@ -1,0 +1,33 @@
+//Written By Kadin Meyer
+//1/27/2025
+
+namespace DominionOfKings
+{
+    public class LandDisputes
+    {
+        static void Main(string[] args)
+        {
+            DominionOfKings.Land aLand1 = new Land();
+
+            Console.WriteLine("Enter Your Estates: ");
+            int Est = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Your Duchies: ");
+            int Duch = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Your Provinces: ");
+            int Prov = Convert.ToInt32(Console.ReadLine());
+
+
+            aLand1.Estates = Est; 
+            aLand1.Duchies = Duch;
+            aLand1.Provinces = Prov;
+
+            Console.WriteLine("Your Total: " + aLand1.Total());
+
+
+
+
+        }
+    }
+}
