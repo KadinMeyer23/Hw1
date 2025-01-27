@@ -1,0 +1,52 @@
+//Written By Kadin Meyer
+//1/27/2025
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DominionOfKings
+{
+    public class Land
+    {
+        //Declare Variables
+        private int estates = -1;
+        private int duchies = -1;
+        private int provinces = -1;
+
+        //gets and sets
+
+        public int Estates 
+        {
+        get { return estates; } 
+        set { estates = value; }
+        
+        }
+
+
+        public int Duchies 
+        {
+        get{ return duchies; }
+        set { duchies = value; }
+        
+        }
+
+
+        public int Provinces
+        {
+            get { return provinces; }
+            set { provinces = value; }
+        }
+
+        //Methods
+
+        public int Total() {
+            int total = 0;
+            total = Estates + (3*Duchies) + (6*Provinces);
+            return total;
+        
+        }
+    }
+}
