@@ -1,0 +1,29 @@
+namespace DefenseOfConsolas
+{
+    public class defense
+    {
+        static void Main(string[] args)
+        {
+
+
+            DefenseOfConsolas.DefenseManuvers aDefenseManuvers = new DefenseManuvers();
+            Console.WriteLine("Enter Row: ");
+            int row = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Colomn: ");
+            int colomn= Convert.ToInt32(Console.ReadLine());   
+
+            aDefenseManuvers.Row = row;
+            aDefenseManuvers.Column = colomn;
+
+
+
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.WriteLine("Deploy Defenses: ");
+            Console.WriteLine(aDefenseManuvers.defense());
+
+            Console.Beep();
+        }
+    }
+}
