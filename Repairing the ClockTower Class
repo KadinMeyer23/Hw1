@@ -1,0 +1,41 @@
+//Written by Kadin Meyer
+//1/27/2025
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RepairTheClockTower
+{
+    public class ClickClock
+    {
+        //declare class variables
+        
+        private int time = -1;
+
+        //Gets and Sets
+        public int Time
+        {
+            get {return this.time;}
+            set {this.time = value;}
+        
+        }
+
+        //Methods
+        public string Ticker() 
+        {
+            int TicTok = Time % 2;
+            if (TicTok == 0)
+            {
+                return "Tick";
+            }
+            else { return "Tock"; }
+        
+        
+        }
+
+    }
+}
