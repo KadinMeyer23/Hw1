@@ -1,0 +1,24 @@
+//Written by Kadin Meyer
+//1/27/2025
+
+namespace RepairTheClockTower
+{
+    public class ClockRepair
+    {
+        static void Main(string[] args)
+        {
+            
+            ClickClock aTime = new ClickClock();
+
+
+
+            Console.WriteLine("Enter Your Time Int: ");
+            int timer = Convert.ToInt32(Console.ReadLine());
+            aTime.Time = timer;
+
+
+            Console.WriteLine(aTime.Ticker());
+
+        }
+    }
+}
