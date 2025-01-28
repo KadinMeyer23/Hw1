@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DefenseOfConsolas
+{
+    public class DefenseManuvers
+    {
+
+        //declaration of class variables
+        private int row = -10000;
+        private int column = -10000;
+
+        //gets and sets
+        public int Row { 
+            get { return row; } 
+            set { row = value; }
+        }
+        public int Column { 
+            get { return column; } 
+            set { column = value; } 
+        }
+
+        //methods
+
+        public int defense() 
+        {
+       
+            int rowDef1 = Row - 1;
+            Console.WriteLine("(" + rowDef1 + "," + Column + ")");
+
+            int rowDef2 = Row + 1;
+            Console.WriteLine("(" + rowDef2 + "," + Column + ")");
+
+            int columnDef1 = Column - 1;
+            Console.WriteLine("(" + Row + "," + columnDef1 + ")");
+
+            int columnDef2 = Column + 1;
+            Console.WriteLine("(" + Row + "," + columnDef2 + ")");
+
+            return 0;
+        }
+    }
+}
